@@ -1,6 +1,0 @@
-struct_person: struct_person.o
-	g++ -o struct_person.o
-struct_person.o : struct_person.cpp
-	g++ -c struct_person.cpp
-clean:
-	rm struct_person.o
