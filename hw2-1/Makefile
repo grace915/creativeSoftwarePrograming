@@ -7,5 +7,5 @@ array_pointer.o: array_pointer.cpp
 call_by_reference.o: call_by_reference.cpp
 	g++ -c call_by_reference.cpp
 clean:
-	rm  array_pointer.o call_by_reference.o
+	rm  array_pointer.o call_by_reference.o .call_by_reference.swp
 

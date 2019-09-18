@@ -1,28 +1,30 @@
 #include <iostream>
-#include<stdio.h>
+#include <stdio.h>
 using namespace std;
 
 typedef struct
 {
-	int xpos;
-	int ypos;
-}Point;
+	char name[7];
+	int score;
+}Person;
 
-void scale2x(Point* pp){
-	pp->xpos *=2;
-	pp->ypos *=2;
+void printScoreStars(Person* persons, int len){
+	
+	for(int i = 0; i<len; i++){
+		cout<<persons[i].name;
+		for(int j = 0; j <person[i].score/5; j++)
+			cout<<"*";
+		
+		cout<<endl;
+	}
+
 }
 
 int main(void){
-	Point point[3];
-	for(int i = 0; i<3; i++){
-		cin>>point[i].xpos
-		cin>>point[i].ypos
+	person list[3];
+	for(int i=0;i<3;i++){
+		scanf("%s %d",&list[i].name,&list[i].score);
 	}
-	for(int i = 0 ; i<3; i++){
-		scale2x(point+i);
-	}
-	for(int i = 0; i<3; i++){
-		cout<<"["<<i<<"]"<<point[i].xpos<<" "<<point[i].ypos<<endl;
-	}
+	printScoreStars(list,3); 
+
 }
