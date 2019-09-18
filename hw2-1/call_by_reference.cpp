@@ -1,19 +1,14 @@
-
-#define _CRT_SECURE_NO_WAWRNINGS
-#include<iostream>
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-using namespace std;
+#include <iostream>
 
-void square(double* ptr){
+void square(double *ptr){
 	*ptr *= *ptr;
-	cout << *ptr << endl;
+	std::cout<<*ptr<<std::endl;
 }
 
 int main(void){
-
-	double dvr;
-	scanf("%lf", &dvr);
-	square(&dvr);
-
+	double dvar;
+	scanf("%lf",&dvar);
+	square(&dvar);
 }
-
