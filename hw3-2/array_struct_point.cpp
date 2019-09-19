@@ -16,8 +16,8 @@ void scale2x(Point* pp){
 int main(void){
 	Point point[3];
 	for(int i = 0; i<3; i++){
-		cin>>point[i].xpos
-		cin>>point[i].ypos
+		cin>>point[i].xpos;
+		cin>>point[i].ypos;
 	}
 	for(int i = 0 ; i<3; i++){
 		scale2x(point+i);
