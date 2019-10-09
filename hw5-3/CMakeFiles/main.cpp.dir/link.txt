@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/main.cpp.dir/magic_square.o  -o main.cpp -rdynamic 

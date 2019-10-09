@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/maigc_square.dir/main.o CMakeFiles/maigc_square.dir/magic_square.o  -o maigc_square -rdynamic 

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/2019_ITE1015_2019079907/hw5-3/magic_square.cpp
+iostream
+-
+
+/home/ubuntu/2019_ITE1015_2019079907/hw5-3/magic_square.h
+
+/home/ubuntu/2019_ITE1015_2019079907/hw5-3/main.cpp
+iostream
+-
+cstdlib
+-
+magic_square.h
+/home/ubuntu/2019_ITE1015_2019079907/hw5-3/magic_square.h
+
