@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/2019_ITE1015_2019079907/hw5-2/sort.cpp
+iostream
+-
+
+/home/ubuntu/2019_ITE1015_2019079907/hw5-2/sort.h
+
+/home/ubuntu/2019_ITE1015_2019079907/hw5-2/sort_int.cpp
+iostream
+-
+sort.h
+/home/ubuntu/2019_ITE1015_2019079907/hw5-2/sort.h
+
