@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/magic_square.dir/main.o"
-  "CMakeFiles/magic_square.dir/magic_square.o"
+  "CMakeFiles/magic_square.dir/main.cpp.o"
+  "CMakeFiles/magic_square.dir/magic_square.cpp.o"
   "magic_square.pdb"
   "magic_square"
 )

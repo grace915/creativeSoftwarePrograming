@@ -57,64 +57,64 @@ include CMakeFiles/magic_square.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/magic_square.dir/flags.make
 
-CMakeFiles/magic_square.dir/main.o: CMakeFiles/magic_square.dir/flags.make
-CMakeFiles/magic_square.dir/main.o: main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/2019_ITE1015_2019079907/hw5-3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/magic_square.dir/main.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/magic_square.dir/main.o -c /home/ubuntu/2019_ITE1015_2019079907/hw5-3/main.cpp
+CMakeFiles/magic_square.dir/main.cpp.o: CMakeFiles/magic_square.dir/flags.make
+CMakeFiles/magic_square.dir/main.cpp.o: main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/2019_ITE1015_2019079907/hw5-3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/magic_square.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/magic_square.dir/main.cpp.o -c /home/ubuntu/2019_ITE1015_2019079907/hw5-3/main.cpp
 
-CMakeFiles/magic_square.dir/main.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/magic_square.dir/main.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/2019_ITE1015_2019079907/hw5-3/main.cpp > CMakeFiles/magic_square.dir/main.i
+CMakeFiles/magic_square.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/magic_square.dir/main.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/2019_ITE1015_2019079907/hw5-3/main.cpp > CMakeFiles/magic_square.dir/main.cpp.i
 
-CMakeFiles/magic_square.dir/main.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/magic_square.dir/main.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/2019_ITE1015_2019079907/hw5-3/main.cpp -o CMakeFiles/magic_square.dir/main.s
+CMakeFiles/magic_square.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/magic_square.dir/main.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/2019_ITE1015_2019079907/hw5-3/main.cpp -o CMakeFiles/magic_square.dir/main.cpp.s
 
-CMakeFiles/magic_square.dir/main.o.requires:
+CMakeFiles/magic_square.dir/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/magic_square.dir/main.o.requires
+.PHONY : CMakeFiles/magic_square.dir/main.cpp.o.requires
 
-CMakeFiles/magic_square.dir/main.o.provides: CMakeFiles/magic_square.dir/main.o.requires
-	$(MAKE) -f CMakeFiles/magic_square.dir/build.make CMakeFiles/magic_square.dir/main.o.provides.build
-.PHONY : CMakeFiles/magic_square.dir/main.o.provides
+CMakeFiles/magic_square.dir/main.cpp.o.provides: CMakeFiles/magic_square.dir/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/magic_square.dir/build.make CMakeFiles/magic_square.dir/main.cpp.o.provides.build
+.PHONY : CMakeFiles/magic_square.dir/main.cpp.o.provides
 
-CMakeFiles/magic_square.dir/main.o.provides.build: CMakeFiles/magic_square.dir/main.o
+CMakeFiles/magic_square.dir/main.cpp.o.provides.build: CMakeFiles/magic_square.dir/main.cpp.o
 
 
-CMakeFiles/magic_square.dir/magic_square.o: CMakeFiles/magic_square.dir/flags.make
-CMakeFiles/magic_square.dir/magic_square.o: magic_square.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/2019_ITE1015_2019079907/hw5-3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/magic_square.dir/magic_square.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/magic_square.dir/magic_square.o -c /home/ubuntu/2019_ITE1015_2019079907/hw5-3/magic_square.cpp
+CMakeFiles/magic_square.dir/magic_square.cpp.o: CMakeFiles/magic_square.dir/flags.make
+CMakeFiles/magic_square.dir/magic_square.cpp.o: magic_square.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/2019_ITE1015_2019079907/hw5-3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/magic_square.dir/magic_square.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/magic_square.dir/magic_square.cpp.o -c /home/ubuntu/2019_ITE1015_2019079907/hw5-3/magic_square.cpp
 
-CMakeFiles/magic_square.dir/magic_square.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/magic_square.dir/magic_square.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/2019_ITE1015_2019079907/hw5-3/magic_square.cpp > CMakeFiles/magic_square.dir/magic_square.i
+CMakeFiles/magic_square.dir/magic_square.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/magic_square.dir/magic_square.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/2019_ITE1015_2019079907/hw5-3/magic_square.cpp > CMakeFiles/magic_square.dir/magic_square.cpp.i
 
-CMakeFiles/magic_square.dir/magic_square.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/magic_square.dir/magic_square.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/2019_ITE1015_2019079907/hw5-3/magic_square.cpp -o CMakeFiles/magic_square.dir/magic_square.s
+CMakeFiles/magic_square.dir/magic_square.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/magic_square.dir/magic_square.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/2019_ITE1015_2019079907/hw5-3/magic_square.cpp -o CMakeFiles/magic_square.dir/magic_square.cpp.s
 
-CMakeFiles/magic_square.dir/magic_square.o.requires:
+CMakeFiles/magic_square.dir/magic_square.cpp.o.requires:
 
-.PHONY : CMakeFiles/magic_square.dir/magic_square.o.requires
+.PHONY : CMakeFiles/magic_square.dir/magic_square.cpp.o.requires
 
-CMakeFiles/magic_square.dir/magic_square.o.provides: CMakeFiles/magic_square.dir/magic_square.o.requires
-	$(MAKE) -f CMakeFiles/magic_square.dir/build.make CMakeFiles/magic_square.dir/magic_square.o.provides.build
-.PHONY : CMakeFiles/magic_square.dir/magic_square.o.provides
+CMakeFiles/magic_square.dir/magic_square.cpp.o.provides: CMakeFiles/magic_square.dir/magic_square.cpp.o.requires
+	$(MAKE) -f CMakeFiles/magic_square.dir/build.make CMakeFiles/magic_square.dir/magic_square.cpp.o.provides.build
+.PHONY : CMakeFiles/magic_square.dir/magic_square.cpp.o.provides
 
-CMakeFiles/magic_square.dir/magic_square.o.provides.build: CMakeFiles/magic_square.dir/magic_square.o
+CMakeFiles/magic_square.dir/magic_square.cpp.o.provides.build: CMakeFiles/magic_square.dir/magic_square.cpp.o
 
 
 # Object files for target magic_square
 magic_square_OBJECTS = \
-"CMakeFiles/magic_square.dir/main.o" \
-"CMakeFiles/magic_square.dir/magic_square.o"
+"CMakeFiles/magic_square.dir/main.cpp.o" \
+"CMakeFiles/magic_square.dir/magic_square.cpp.o"
 
 # External object files for target magic_square
 magic_square_EXTERNAL_OBJECTS =
 
-magic_square: CMakeFiles/magic_square.dir/main.o
-magic_square: CMakeFiles/magic_square.dir/magic_square.o
+magic_square: CMakeFiles/magic_square.dir/main.cpp.o
+magic_square: CMakeFiles/magic_square.dir/magic_square.cpp.o
 magic_square: CMakeFiles/magic_square.dir/build.make
 magic_square: CMakeFiles/magic_square.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/2019_ITE1015_2019079907/hw5-3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable magic_square"
@@ -125,8 +125,8 @@ CMakeFiles/magic_square.dir/build: magic_square
 
 .PHONY : CMakeFiles/magic_square.dir/build
 
-CMakeFiles/magic_square.dir/requires: CMakeFiles/magic_square.dir/main.o.requires
-CMakeFiles/magic_square.dir/requires: CMakeFiles/magic_square.dir/magic_square.o.requires
+CMakeFiles/magic_square.dir/requires: CMakeFiles/magic_square.dir/main.cpp.o.requires
+CMakeFiles/magic_square.dir/requires: CMakeFiles/magic_square.dir/magic_square.cpp.o.requires
 
 .PHONY : CMakeFiles/magic_square.dir/requires
 

@@ -123,35 +123,59 @@ magic_square/fast:
 	$(MAKE) -f CMakeFiles/magic_square.dir/build.make CMakeFiles/magic_square.dir/build
 .PHONY : magic_square/fast
 
-# target to build an object file
-magic_square.o:
-	$(MAKE) -f CMakeFiles/magic_square.dir/build.make CMakeFiles/magic_square.dir/magic_square.o
+magic_square.o: magic_square.cpp.o
+
 .PHONY : magic_square.o
 
-# target to preprocess a source file
-magic_square.i:
-	$(MAKE) -f CMakeFiles/magic_square.dir/build.make CMakeFiles/magic_square.dir/magic_square.i
+# target to build an object file
+magic_square.cpp.o:
+	$(MAKE) -f CMakeFiles/magic_square.dir/build.make CMakeFiles/magic_square.dir/magic_square.cpp.o
+.PHONY : magic_square.cpp.o
+
+magic_square.i: magic_square.cpp.i
+
 .PHONY : magic_square.i
 
-# target to generate assembly for a file
-magic_square.s:
-	$(MAKE) -f CMakeFiles/magic_square.dir/build.make CMakeFiles/magic_square.dir/magic_square.s
+# target to preprocess a source file
+magic_square.cpp.i:
+	$(MAKE) -f CMakeFiles/magic_square.dir/build.make CMakeFiles/magic_square.dir/magic_square.cpp.i
+.PHONY : magic_square.cpp.i
+
+magic_square.s: magic_square.cpp.s
+
 .PHONY : magic_square.s
 
-# target to build an object file
-main.o:
-	$(MAKE) -f CMakeFiles/magic_square.dir/build.make CMakeFiles/magic_square.dir/main.o
+# target to generate assembly for a file
+magic_square.cpp.s:
+	$(MAKE) -f CMakeFiles/magic_square.dir/build.make CMakeFiles/magic_square.dir/magic_square.cpp.s
+.PHONY : magic_square.cpp.s
+
+main.o: main.cpp.o
+
 .PHONY : main.o
 
-# target to preprocess a source file
-main.i:
-	$(MAKE) -f CMakeFiles/magic_square.dir/build.make CMakeFiles/magic_square.dir/main.i
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/magic_square.dir/build.make CMakeFiles/magic_square.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
 .PHONY : main.i
 
-# target to generate assembly for a file
-main.s:
-	$(MAKE) -f CMakeFiles/magic_square.dir/build.make CMakeFiles/magic_square.dir/main.s
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/magic_square.dir/build.make CMakeFiles/magic_square.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
 .PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/magic_square.dir/build.make CMakeFiles/magic_square.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
