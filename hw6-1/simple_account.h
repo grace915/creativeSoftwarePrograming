@@ -16,7 +16,7 @@ public:
 class accountManager {
 private:
 	Account* acc_array;
-	int acc_num;
+	int acc_num = 0;
 public:
 	accountManager();
 	void create_new_account();
