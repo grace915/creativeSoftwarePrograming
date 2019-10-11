@@ -6,6 +6,8 @@ Account :: Account (){
 	this->id = -1;
 	this->balance = 0;
 }
+
+
 Account :: Account (int i){
 	this->id = i;
 	this->balance = 0;
@@ -24,6 +26,9 @@ accountManager :: accountManager(){
 	this->acc_array = new Account[10];
 	this->acc_num = 0;
 }
+accountManager :: ~accountManager(){
+	delete[] acc_array;	
+};
 
 void accountManager :: create_new_account(){
 	int current = this->acc_num;

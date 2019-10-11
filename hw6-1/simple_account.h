@@ -7,6 +7,7 @@ private:
 	int balance;
 public:
 	Account();
+		
 	Account(int i);
 	int getBalance() ;
 	void deposit(int money);
@@ -19,6 +20,7 @@ private:
 	int acc_num = 0;
 public:
 	accountManager();
+	~accountManager();
 	void create_new_account();
 	void deposit(int acc_id, int money);
 	void withdraw(int acc_id, int money);
