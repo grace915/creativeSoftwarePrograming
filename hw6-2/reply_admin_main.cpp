@@ -23,12 +23,18 @@ int main() {
 		else if (check.find( "#remove")!= string::npos) {
 			id = check.substr(8);
 			if (id.length()>1) {
-				char back = id[2];
-
-				r.removeChat(atoi(id.c_str()), atoi(&back));
-				
+				if(id[0] == '-'){
+					if(id.length() ==2 ){
+						r.removeChat(-atoi(id.c_str()));
+					}else if(id[3] != '-'){
+						r.removeChat(0,atoi(&id[3]));
+				}
+				}
+				else {
+					r.removeChat(atoi(id.c_str()), atoi(&id[2]));
+				}
 			}
-			else
+			else if(id.length() == 1)
 				r.removeChat(atoi(id.c_str()));
 		
 		}

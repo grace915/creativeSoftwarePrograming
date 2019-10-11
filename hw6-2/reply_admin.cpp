@@ -31,11 +31,11 @@ bool ReplyAdmin::addChat(string _chat) {
 
 }
 bool ReplyAdmin::removeChat(int _index) {
-	if (_index < 0 || _index >= num) {
+	if (_index < 0 || _index >= getChatCount()){
 		return false;
-	}
+		}
 	else {
-		for (int i = _index; i < num ; i++) {
+		for (int i = _index; i < getChatCount() ; i++) {
 			if (chats[i+ 1].empty() == 1) {
 				chats[i].clear();
 			}
@@ -49,8 +49,20 @@ bool ReplyAdmin::removeChat(int _index) {
 	}
 }
 bool ReplyAdmin :: removeChat(int _start, int _end) {
-	if (_start < 0 || _end >= num) {
-		return false;
+	int a = getChatCount();
+	if (_start < 0 ){
+		for(int i = 0; i<=_end; i++){
+			removeChat(0);		
+	}
+		
+	}else if( _end >= getChatCount()){
+		for(int i = _start ; i<= a; i++){
+		
+			removeChat(_start);	
+		}
+	}else if(_start<0 && _end >=getChatCount()){
+		for(int i = 0; i<= a; i++)	
+			chats[i].clear();
 	}
 	else {
 		for (int i = _start; i <= _end; i++) {
@@ -64,7 +76,7 @@ bool ReplyAdmin :: removeChat(int _start, int _end) {
 }
 
 void ReplyAdmin::printChat() {
-	for (int i = 0; i < num; i++)
+	for (int i = 0; i < getChatCount(); i++)
 		cout <<i<<" : "<< chats[i] << endl;
 }
 
