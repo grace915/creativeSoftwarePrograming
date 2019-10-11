@@ -14,14 +14,14 @@ int main() {
 		string check;
 		string id;
 
-		cin >> check;
+		getline(cin,check);
 	
 
 		if (check == "#quit")
 			return 0;
 		
-		else if (check == "#remove") {
-			cin >> id;
+		else if (check.find( "#remove")!= string::npos) {
+			id = check.substr(8);
 			if (id.length()>1) {
 				char back = id[2];
 
