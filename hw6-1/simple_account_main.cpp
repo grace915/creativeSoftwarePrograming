@@ -83,7 +83,7 @@ int main(void) {
 			}
 			else {
 				cout << "Failure : Transfer from user " << acc_id_from << " to user " << acc_id_to<< " " <<money << endl
-					<< "Balance of user " << acc_id_from << " : " << ac.getBalance(acc_id_from) << endl << endl
+					<< "Balance of user " << acc_id_from << " : " << ac.getBalance(acc_id_from) << endl <<
 					<< "Balance of user " << acc_id_to << " : " << ac.getBalance(acc_id_to) << endl << endl;;
 			}
 		}
