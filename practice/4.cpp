@@ -1,15 +1,8 @@
 #include <iostream>
 #include <cstdlib>
+#include <string>
 using namespace std;
 
-double square(double a){
-
-	return a*a;
-}
-float square(float a){
-
-	return a+ a;
-}
 
 
 int main(){
@@ -18,13 +11,21 @@ int main(){
 	cout<<a<<endl;
 	cout<<b<<endl;
 
-	int c;
-	cin>>c;
-	if(c == 1? true:false)
-		cout<<c<<endl;
-
 	
-	cout<<square(5)<<endl;
-		
+	
 
+	string line;
+	cout<<"write a line"<<endl;
+	while(cin>>line && line!="q"){
+		cout<<line[0]<<endl;
+		cout<<line<<"---"<<endl;
+	}
+
+	char c[20];
+	cin.getline(c,20,':');
+	cout<<c<<endl;
+	cout<< (char)cin.get()<<endl;
+	cout<< (char)cin.get()<<endl;
+	
+	
 }
