@@ -1,0 +1,4 @@
+/home/ubuntu/2019_ITE1015_2019079907/hw9-2/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/2019_ITE1015_2019079907/hw9-2/CMakeFiles/edit_cache.dir
+/home/ubuntu/2019_ITE1015_2019079907/hw9-2/CMakeFiles/draw_shape.dir
+/home/ubuntu/2019_ITE1015_2019079907/hw9-2/CMakeFiles/Animals.dir
