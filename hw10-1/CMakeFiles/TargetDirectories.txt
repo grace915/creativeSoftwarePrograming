@@ -1,0 +1,6 @@
+/home/ubuntu/2019_ITE1015_2019079907/hw10-1/CMakeFiles/edit_cache.dir
+/home/ubuntu/2019_ITE1015_2019079907/hw10-1/CMakeFiles/print_shape.dir
+/home/ubuntu/2019_ITE1015_2019079907/hw10-1/CMakeFiles/cast_quiz.dir
+/home/ubuntu/2019_ITE1015_2019079907/hw10-1/CMakeFiles/dynamic_cast.dir
+/home/ubuntu/2019_ITE1015_2019079907/hw10-1/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/2019_ITE1015_2019079907/hw10-1/CMakeFiles/shapes.dir

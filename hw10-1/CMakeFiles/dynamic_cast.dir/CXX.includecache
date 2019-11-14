@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/2019_ITE1015_2019079907/hw10-1/dynamic_cast.cc
+dynamic_cast.h
+/home/ubuntu/2019_ITE1015_2019079907/hw10-1/dynamic_cast.h
+
+/home/ubuntu/2019_ITE1015_2019079907/hw10-1/dynamic_cast.h
+iostream
+-
+string
+-
+vector
+-
+
+/home/ubuntu/2019_ITE1015_2019079907/hw10-1/dynamic_cast_main.cc
+dynamic_cast.h
+/home/ubuntu/2019_ITE1015_2019079907/hw10-1/dynamic_cast.h
+
