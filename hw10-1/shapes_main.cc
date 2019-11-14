@@ -20,5 +20,6 @@ int main() {
 	for (int i = 0; i < shapes.size(); i++) {
 		delete shapes[i];
 	}
+	shapes.clear();
 	return 0;
 }
