@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/2019_ITE1015_2019079907/hw10-2/clock_time.cc
+iostream
+-
+iomanip
+-
+clock_time.h
+/home/ubuntu/2019_ITE1015_2019079907/hw10-2/clock_time.h
+
+/home/ubuntu/2019_ITE1015_2019079907/hw10-2/clock_time.h
+
+/home/ubuntu/2019_ITE1015_2019079907/hw10-2/clock_time_main.cc
+clock_time.h
+/home/ubuntu/2019_ITE1015_2019079907/hw10-2/clock_time.h
+vector
+-
+iostream
+-
+

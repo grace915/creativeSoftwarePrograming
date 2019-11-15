@@ -1,0 +1,4 @@
+/home/ubuntu/2019_ITE1015_2019079907/hw10-2/CMakeFiles/edit_cache.dir
+/home/ubuntu/2019_ITE1015_2019079907/hw10-2/CMakeFiles/clock_time.dir
+/home/ubuntu/2019_ITE1015_2019079907/hw10-2/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/2019_ITE1015_2019079907/hw10-2/CMakeFiles/print_shape.dir
