@@ -33,5 +33,6 @@ int main(){
 	cout << "Reported clock times after running" << endl;
 	for (int i = 0; i < v.size(); i++) {
 		v[i]->displayTime();
+		delete v[i];
 	}
 }
