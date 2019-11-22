@@ -1,7 +1,7 @@
 #include "string.h"
 MyString::MyString() {
 	
-	len = 10;
+	len = 100;
 	a = new char[len];
 
 }
@@ -14,9 +14,10 @@ MyString MyString::operator+(const MyString& a) {
 	MyString ms;
 
 	strcat(ms.a, this->a);
-	ms.len = sizeof(ms.a);
+	ms.len = strlen(ms.a);
 	strcat(ms.a, a.a);
-	ms.len = sizeof(ms.a);
+	ms.len = strlen(ms.a);
+
 	return ms;
 	
 
@@ -26,8 +27,10 @@ MyString MyString::operator*(const int a) {
 
 	for (int i = 0; i < a; i++) {
 		strcat(ms.a, this->a);
-		ms.len = sizeof(ms.a);
+		ms.len = strlen(ms.a);
 	}
+
+
 
 	return ms;
 }
@@ -38,7 +41,7 @@ ostream& operator << (ostream& out, const MyString& b) {
 }
 istream& operator >> (istream& in, MyString& b) {
 	in >> b.a;
-	b.len = sizeof(b.a);
+	b.len = strlen(b.a);
 	
 	return in;
 	
