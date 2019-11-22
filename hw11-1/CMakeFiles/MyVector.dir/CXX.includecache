@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/2019_ITE1015_2019079907/hw11-1/MyVector.cc
+MyVector.h
+/home/ubuntu/2019_ITE1015_2019079907/hw11-1/MyVector.h
+
+/home/ubuntu/2019_ITE1015_2019079907/hw11-1/MyVector.h
+iostream
+-
+cstdlib
+-
+
+/home/ubuntu/2019_ITE1015_2019079907/hw11-1/MyVector_main.cc
+MyVector.h
+/home/ubuntu/2019_ITE1015_2019079907/hw11-1/MyVector.h
+
