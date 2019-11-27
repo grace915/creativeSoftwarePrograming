@@ -1,3 +1,0 @@
-/home/ubuntu/2019_ITE1015_2019079907/hw11-2/CMakeFiles/edit_cache.dir
-/home/ubuntu/2019_ITE1015_2019079907/hw11-2/CMakeFiles/rebuild_cache.dir
-/home/ubuntu/2019_ITE1015_2019079907/hw11-2/CMakeFiles/world_clock.dir
