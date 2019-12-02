@@ -1,5 +1,5 @@
-#include "list.h"
 #include "list.cc"
+
 
 int main() {
 	int array[5] = { 12, 7, 9, 21, 13 };
@@ -12,7 +12,9 @@ int main() {
 	li.push_back(15);
 	cout << li << endl; //12,7,9,21,15
 
+
 	li.pop_front();
+
 	cout << li << endl; //7,9,21,15
 
 	li.push_front(8);

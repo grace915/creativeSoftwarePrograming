@@ -9,7 +9,7 @@ class Node
 public:
 	T data;
 	Node<T>* next;
-	Node(T d) { 
+	Node(T d) {
 		data = d; next = NULL;
 	}
 };
@@ -28,7 +28,7 @@ public:
 	void push_back(T val);
 	void pop_front(); // if list is empty, do nothing.
 	void push_front(T val);
-	
-	template<class T>
-	friend ostream& operator<<(ostream& out, const List& rhs);
+
+	template <class T1>
+	friend ostream& operator<<(ostream& out, const List<T1>& rhs);
 };

@@ -1,20 +1,21 @@
 #include "list.h"
 
+
 template<class T>
 List<T>::List() {
-	
+
 	head = NULL;
 
 }
 template<class T>
 List<T>::List(T* arr, int n_nodes) {
 
+	head = NULL;
+	for (int i = 0; i < n_nodes; i++) {
+		this->push_back(arr[i]);
+	}
 
-head = NULL;
-for(int i = 0; i< n_nodes;i++){
-this->push_back(arr[i]);
-}
-/*
+	/*
 	if (n_nodes) {
 		head = Node<T>(arr[0]);//arr[0]을 넣고
 		Node<T>* before = head;//그전게 머리가 되고
@@ -25,8 +26,8 @@ this->push_back(arr[i]);
 	}
 	else {
 		this->head = NULL;
-	}
-*/	
+	}*/
+	// .list.cc.swp
 }
 template<class T>
 bool List<T>::isEmpty()const {
@@ -38,7 +39,6 @@ bool List<T>::isEmpty()const {
 
 template<class T>
 void List<T>::insert_at(int idx, T data) {
-	
 	if (idx == 0) {
 		push_front(data);
 		return;
@@ -46,8 +46,8 @@ void List<T>::insert_at(int idx, T data) {
 	if (head == NULL)
 		return;
 
-	Node<T>* newnode = new Node<T>(data);
-	Node<T>* seek = head;
+	Node<T> * newnode = new Node<T>(data);
+	Node<T> * seek = head;
 	int chk = 0;
 	while (seek != NULL) {
 		chk++;
@@ -70,16 +70,17 @@ void List<T>::remove_at(int idx) {
 		pop_front();
 		return;
 	}
-	else  /*(idx > 0 && idx <= size() - 1) */{
-		Node <T>* temp = head;
+	else  /*(idx > 0 && idx <= size() - 1) */ {
+		Node<T>* temp = head;
 		Node<T>* target = head;
-		for (int i = 0; i <= idx - 1; i++) {
+		for (int i = 1; i <= idx - 1; i++) {
 			temp = temp->next;
 			target = target->next;
 		}
-		target = target->next;
-		temp->next = target->next;
-		delete target;
+		temp =  temp->next;
+		target->next = target->next->next;
+
+		delete temp;
 	}
 }
 template<class T>
@@ -90,7 +91,7 @@ void List<T>::pop_back() {
 	else {
 		Node<T>* before = NULL;
 		Node<T>* now = head;
-		for(Node<T>* ptr = head; ptr !=NULL ; ptr = ptr->next){
+		for (Node<T>* ptr = head; ptr != NULL; ptr = ptr->next) {
 			before = now;
 			now = ptr;
 		}
@@ -103,6 +104,7 @@ void List<T>::pop_back() {
 }
 template<class T>
 void List<T>::push_back(T val) {
+
 	Node<T>* newNode = new Node<T>(val);
 	if (head == NULL) {
 		head = newNode;
@@ -113,16 +115,21 @@ void List<T>::push_back(T val) {
 			now = ptr;
 		}
 		now->next = newNode;
+		
 	}
-	
+
 }
 template<class T>
 void List<T>::pop_front() {
-	head = NULL;
-	while (isEmpty()) {
-		head = head->next;
+	if (head == NULL) {
 
+		return;
 	}
+	Node<T>* seek = head->next;
+	Node<T>* prev = head;
+	delete prev;
+	head = seek;
+
 
 }
 template<class T>
@@ -132,9 +139,10 @@ void List<T>::push_front(T val) {
 	this->head = newNode;
 
 }
-template<class T>
-ostream& operator<<(ostream& out, const List<T>& rhs) {
-	Node<T>* seek = rhs.head;
+template<class T1>
+ostream& operator<<(ostream & out, const List<T1> & rhs) {
+	Node<T1>* seek;
+	seek = rhs.head;
 	while (seek != NULL) {
 		out << seek->data;
 		seek = seek->next;
@@ -149,5 +157,3 @@ ostream& operator<<(ostream& out, const List<T>& rhs) {
 	return out;
 
 }
-
-
