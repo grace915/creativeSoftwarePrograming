@@ -9,10 +9,7 @@ private:
 	T* m_obj;
 	int* count;
 public:
-	My_shared_ptr(): m_obj(NULL), count(NULL)
-	{
-	
-	}
+	My_shared_ptr(): m_obj(NULL), count(NULL){}
 
 	My_shared_ptr(T* obj)
 	{
@@ -20,7 +17,7 @@ public:
 		this->count = new int(1);
 	}
 
-	My_shared_ptr(const My_shared_ptr& rhs)//copy constructor.
+	My_shared_ptr(const My_shared_ptr& rhs)
 	{
 		this->m_obj = rhs.m_obj;
 		this->count = rhs.count;
@@ -30,13 +27,16 @@ public:
 	~My_shared_ptr() {
 		this->decrease();
 		if (this->getCount() == 0)
-			if (getCount() == 0)
-				cout << "everything destroyed" << endl;
+			cout << "everything destroyed" << endl;
 	}
 
 
 	int getCount() {
-		return (this->count == NULL) ? 0 : *(this->count);
+		if(this->count == NULL)
+			return 0;
+		else
+			return *(this->count);
+		
 	}
 
 	void increase() {
@@ -90,7 +90,7 @@ int main()
 			if (a.get_m_obj() == b.get_m_obj())
 				cout << "resource shared" << endl;
 
-			a = b;//assignment operation
+			a = b;
 			cout << a.getCount() << endl;
 			cout << b.getCount() << endl;
 
