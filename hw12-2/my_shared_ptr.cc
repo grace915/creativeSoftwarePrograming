@@ -1,7 +1,5 @@
 #include<iostream>
 using namespace std;
-
-
 template <class T>
 class My_shared_ptr
 {
@@ -10,27 +8,22 @@ private:
 	int* count;
 public:
 	My_shared_ptr(): m_obj(NULL), count(NULL){}
-
 	My_shared_ptr(T* obj)
 	{
 		this->m_obj = obj;
 		this->count = new int(1);
 	}
-
 	My_shared_ptr(const My_shared_ptr& rhs)
 	{
 		this->m_obj = rhs.m_obj;
 		this->count = rhs.count;
 		this->increase();
 	}
-
 	~My_shared_ptr() {
 		this->decrease();
 		if (this->getCount() == 0)
 			cout << "everything destroyed" << endl;
 	}
-
-
 	int getCount() {
 		if(this->count == NULL)
 			return 0;
@@ -38,7 +31,6 @@ public:
 			return *(this->count);
 		
 	}
-
 	void increase() {
 		if (this->count == NULL) {
 			this->count = new int(1);
@@ -54,12 +46,10 @@ public:
 			delete this->count;
 			this->count = NULL;
 			this->m_obj = NULL;
-
 		}
 	}
 	My_shared_ptr<T>& operator=(const My_shared_ptr<T>& rhs)
 	{
-
 		if (this->m_obj != NULL)
 			decrease();
 		this->m_obj = rhs.m_obj;
@@ -67,15 +57,11 @@ public:
 		this->increase();
 		return *this;
 	}
-
 	const T* get_m_obj()
 	{
 		return m_obj;
 	}
-
-
 };
-
 typedef unsigned long T;
 int main()
 {
@@ -86,14 +72,11 @@ int main()
 			My_shared_ptr<T> b(new T(5));
 			cout << a.getCount() << endl;
 			cout << b.getCount() << endl;
-
 			if (a.get_m_obj() == b.get_m_obj())
 				cout << "resource shared" << endl;
-
 			a = b;
 			cout << a.getCount() << endl;
 			cout << b.getCount() << endl;
-
 			if (a.get_m_obj() == b.get_m_obj())
 				cout << "resource shared" << endl;
 		}

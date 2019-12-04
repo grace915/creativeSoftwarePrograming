@@ -8,4 +8,4 @@ list_main.o:list_main.cc
 my_shared_ptr.o:my_shared_ptr.cc
 	g++ -std=c++11 -c my_shared_ptr.cc
 clean:
-	rm list.o list_main.o my_shared_ptr.cc
+	rm list.o list_main.o my_shared_ptr.o
