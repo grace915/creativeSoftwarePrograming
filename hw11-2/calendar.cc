@@ -1,4 +1,3 @@
-
 #include "calendar.h"
 Date::Date() {}
 Date::Date(int year, int month, int day) {
@@ -7,12 +6,9 @@ Date::Date(int year, int month, int day) {
 	day_ = day;
 	
 }
-
-
 void Date::NextDay(int n)
 {
 	int _days = ComputeDaysFromYearStart(year_, month_, day_) + n ;
-
 	while (_days < 0)
 	{
 		_days += GetDaysInYear(year_);
@@ -24,29 +20,22 @@ void Date::NextDay(int n)
 		year_++;
 		
 	}
-
 	month_ = 1;
-
-
 	for (int i = 1; days[i] < _days; i++)
 	{
 		month_ = i + 1;
 		_days -= days[i];
 	}
 	day_ = _days;
-
 	SetDate(year_, month_, day_);
 }
 void Date::SetDate(int year, int month, int day) {
-
 	if (GetDaysInYear(year) == 366) {
-
 		days[2] = 29;
 		if (days[month] < day) {
 			
 			cout << "Invalid date : " << year << "." << month << "." << day << endl;
 		}
-
 		else {
 			year_ = year;
 			month_ = month;
@@ -60,30 +49,21 @@ void Date::SetDate(int year, int month, int day) {
 			
 			cout << "Invalid date : " << year << "." << month << "." << day << endl;
 		}
-
 		else {
 			year_ = year;
 			month_ = month;
 			day_ = day;
-
 			cout << *this;
 		}
-
 	}
-
 	
 }
-
-
 string Date::GetDate()const {
 	
 string s = to_string(year_) + "." + to_string(month_) + "." + to_string(day_);
-
 return s;
-
 }
 int Date::GetDaysInYear(int year) {
-
 	//4로 나누어떨어지지만 100으로 나눠떨어지지 않을 때 366
 	//4와 100으로 나누어떨어지지만 400으로도 나누어떨어질 때 366
 	if (year % 4 == 0 && year % 100 != 0) {
@@ -123,7 +103,6 @@ int Date::ComputeDaysFromYearStart(int year, int month, int day) {
 			return 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + day;
 		else if (month == 12)
 			return 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + day;
-
 	}
 	else if (GetDaysInYear(year) == 366) {
 		if (month == 1)
@@ -150,19 +129,12 @@ int Date::ComputeDaysFromYearStart(int year, int month, int day) {
 			return 31 + 29 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + day;
 		else if (month == 12)
 			return 31 + 29 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30 + day;
-
-
-
 	}
 }
-
-
 ostream& operator<<(ostream& os, const Date& c) {
-
 	return os << c.GetDate() << endl;
 	
 }
-
 istream& operator>>(istream& is, Date& c) {
 	string line;
 	is >> line;
