@@ -24,7 +24,7 @@ int main() {
 		}
 		catch (A & a)
 		{
-#if 0//rethrow, 아래 throw twice구문도 실행시켜 볼  것
+#if 1//rethrow, 아래 throw twice구문도 실행시켜 볼  것
 			cout << "rethrow" << endl;
 			throw;
 #else//throw twice
